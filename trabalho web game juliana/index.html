@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo das Cores</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <header class="titulo_centralizado">
+        <h1>Jogo das Cores</h1>
+        <p>Clique no botão e responda o mini-quiz!</p>
+    </header>
+
+    <main class="container_principal">
+
+        <section class="d-flex flex-column align-items-center justify-content-center mb-5">
+            <button id="colorButton" class="btn btn-primary btn-lg px-4 py-3">
+                Clique para gerar uma cor
+            </button>
+        </section>
+
+
+        <section>
+            <h2 class="título">Mini Quiz</h2>
+
+            <form id="quizForm" class="border rounded p-4 bg-light">
+
+                <div class="quizUm">
+                    <label class="form-label fw-bold">1. Qual dessas cores você mais gosta?</label>
+                    <div>
+                        <input type="radio" name="favColor" value="1" class="form-check-input"> Vermelho<br>
+                        <input type="radio" name="favColor" value="1" class="form-check-input"> Azul<br>
+                        <input type="radio" name="favColor" value="1" class="form-check-input"> Verde
+                    </div>
+                </div>
+
+                <div class="quiz2">
+                    <label class="form-label fw-bold">2. Quais emoções combinam com cores?</label><br>
+                    <input type="checkbox" name="emotion" value="1" class="form-check-input"> Alegria<br>
+                    <input type="checkbox" name="emotion" value="1" class="form-check-input"> Tristeza<br>
+                    <input type="checkbox" name="emotion" value="-1" class="form-check-input"> Nada a ver
+                </div>
+
+                <div class="enviar_mensagens">
+                    <button type="submit" class="btn btn-success btn-lg">Enviar Respostas</button>
+                </div>
+
+            </form>
+
+            <div id="quizResult" class="mt-4 text-center fs-4 fw-bold"></div>
+        </section>
+
+    </main>
+
+    <footer class="rodapé">
+        <small>Projeto simples – HTML, CSS, JS e Bootstrap</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
