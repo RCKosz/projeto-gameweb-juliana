@@ -1,0 +1,28 @@
+#colorBox {
+    width: 75%;
+    height: 75%;
+    font-size: 2rem;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.titulo_centralizado{
+    text-align: center;
+}
+
+.quizUm{
+    text-align: center;
+}
+
+.quiz2{
+    text-align: center;
+}
+
+.eenviar_resposta{
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
